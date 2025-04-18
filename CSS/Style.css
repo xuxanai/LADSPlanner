@@ -33,6 +33,24 @@ li {
     padding-left: 1%;
     margin-left: 3%;
     overflow: auto;
+    position: relative;
+    height: 4em;
+    display: flex;
+}
+
+.button::after {
+    content: '';
+    height: 0.2em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.button a {
+       align-self: center;
 }
 
 li a {
@@ -41,8 +59,9 @@ li a {
     font-family: 'Revista Stencil';
 }
 
-.button:hover {
+.button:hover::after {
     background-color: #9B78A9;
+    opacity: 1;
 }
 
 .active {
@@ -50,5 +69,21 @@ li a {
     padding-left: 1%;
     margin-left: 3%;
     overflow: auto;
-    background-color: #3A2647;
+    position: relative;
+    height: 4em;
+    display: flex;
+}
+
+.active::after {
+    content: '';
+    height: 0.2em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #3A2647;
+}
+
+.active a {
+    align-self: center;
 }
