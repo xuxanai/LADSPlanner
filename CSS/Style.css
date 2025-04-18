@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(to bottom right, #443351, #826D84);
+    padding: 0;
+    margin: 0;
+}
+
+.logo { /* edit image size to resize banner */
+    padding-top: 2%;
+    padding-right: 0.5%;
+    padding-left: 5%;
+    padding-bottom: 0.5%;
+    max-width: 100%;
+    height:auto;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #43344C, #775C88);
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+
+li {
+    float: left;
+}
+
+.button {
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 3%;
+    overflow: auto;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Revista Stencil';
+}
+
+.button:hover {
+    background-color: #3A2647;
+}
+
+.active {
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 3%;
+    overflow: auto;
+    background-color: #3A2647;
+}
